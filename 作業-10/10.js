@@ -1,6 +1,6 @@
 async function translateText() {
     const apiKey = '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';
-    const endpoint = 'https://api.groq.com/openai/v1/chat/completions';
+    const endpoint = 'https://console.groq.com/keys';
     const inputText = document.getElementById('inputText').value;
     const targetLang = document.getElementById('targetLang').value;
     const prompt = `Translate the following text to ${targetLang}:\n${inputText}`;
