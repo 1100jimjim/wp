@@ -3,9 +3,9 @@
 ## source
 | project | source |
 | --- | --- |
-| html | [translate.html](https://github.com/1100jimjim/wp/blob/master/%E4%BD%9C%E6%A5%AD-10/10.html) |
-| CSS | [main.css](https://github.com/1100jimjim/wp/blob/master/%E4%BD%9C%E6%A5%AD-10/10.css) |
-| JS | [main.js](https://github.com/1100jimjim/wp/blob/master/%E4%BD%9C%E6%A5%AD-10/10.js)  |
+| html | [10.html](https://github.com/1100jimjim/wp/blob/master/%E4%BD%9C%E6%A5%AD-10/10.html) |
+| CSS | [10.css](https://github.com/1100jimjim/wp/blob/master/%E4%BD%9C%E6%A5%AD-10/10.css) |
+| JS | [10.js](https://github.com/1100jimjim/wp/blob/master/%E4%BD%9C%E6%A5%AD-10/10.js)  |
 
 ## detal
 *參考老師範例與ChatGpt完成
