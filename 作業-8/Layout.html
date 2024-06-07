@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layout with Smaller Left and Right Sidebars</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header, footer {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+    nav {
+        background-color: #ff9999;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+    .container {
+        display: flex;
+        min-height: 100vh;
+    }
+    .sidebar {
+        background-color: #ffff00;
+    }
+    .main-content {
+        flex: 1;
+        padding: 20px;
+    }
+    .left-sidebar, .right-sidebar {
+        width: 150px;
+        background-color: #ffff00;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    
+</header>
+
+<nav>
+    <ul>
+        <li><a href="https://1100jimjim.github.io/wp/%E4%BD%9C%E6%A5%AD-5/%E6%94%BE%E5%A4%A7.html">作業1</a></li>
+        <li><a href="https://1100jimjim.github.io/wp/%E4%BD%9C%E6%A5%AD-5/%E5%8F%B3%E7%A7%BB.html">作業2</a></li>
+        <li><a href="https://1100jimjim.github.io/wp/%E4%BD%9C%E6%A5%AD-5/%E9%9A%A8%E6%A9%9F.html">作業3</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="top-sidebar"></div>
+    <div class="left-sidebar"></div>
+    <div class="main-content">
+        <section>
+            <article>
+
+            </article>
+            <article>
+            </article>
+        </section>
+    </div>
+    <div class="right-sidebar"></div>
+    <div class="bottom-sidebar"></div>
+</div>
+
+<footer>
+    
+</footer>
+
+</body>
+</html>
