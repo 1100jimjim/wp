@@ -29,16 +29,27 @@ async function translateText() {
     const inputText = document.getElementById("inputText").value;
     const targetLang = document.getElementById("targetLang").value;
     if (!inputText) {
-        alert("请输入要翻译的文本！");
+        alert("請輸入");
         return;
     }
-    const query = `请将以下文本翻译成${targetLang}:\n\n${inputText}`;
+    const query = `請將以下文字翻譯成${targetLang}:\n\n${inputText}`;
     const jsonData = await chat(query);
     const outputDiv = document.getElementById("outputText");
     if (jsonData && jsonData.choices && jsonData.choices[0] && jsonData.choices[0].message) {
         outputDiv.innerText = jsonData.choices[0].message.content;
     } else {
-        outputDiv.innerText = "翻译失败，请稍后重试。";
+        outputDiv.innerText = "請稍後在試。";
     }
 }
+
+function handleEnterKey(event) {
+    if (event.key === "Enter" && !event.shiftKey) {
+        event.preventDefault();
+        translateText();
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById("inputText").addEventListener("keydown", handleEnterKey);
+});
 
