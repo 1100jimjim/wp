@@ -1,4 +1,4 @@
-async function translateText() {
+async function chat () {
     const apiKey = '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';
     const endpoint = 'https://api.groq.com/openai/v1/chat/completions';
     const inputText = document.getElementById('inputText').value;
