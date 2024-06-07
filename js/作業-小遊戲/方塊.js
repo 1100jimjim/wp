@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let pos = { x: 0, y: 0 };
     let gameOver = false;
     let dropCounter = 0;
-    let dropInterval = 1000; // 初始下降速度
+    let dropInterval = 1000;
     let fastDrop = false;
     let lastTime = 0;
 
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
             merge();
             resetTetromino();
             clearLines();
-            dropInterval = Math.max(100, dropInterval - 50); // 每次下降後減少速度間隔
+            dropInterval = Math.max(100, dropInterval - 50);
         }
         drawBoard();
     }
