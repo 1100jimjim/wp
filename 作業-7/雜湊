@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHA-256 雜湊介面</title>
+</head>
+<body>
+    <h1>SHA-256 雜湊介面</h1>
+    <label for="inputText">輸入文字：</label>
+    <input type="text" id="inputText" oninput="updateHash()">
+    <p>雜湊值：<span id="hashValue"></span></p>
+
+    <script>
+        async function sha256(message) {
+            const msgBuffer = new TextEncoder().encode(message);
+            const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+            return hashHex;
+        }
+
+        async function updateHash() {
+            const inputText = document.getElementById('inputText').value;
+            const hashValue = await sha256(inputText);
+            document.getElementById('hashValue').textContent = hashValue;
+        }
+    </script>
+</body>
+</html>
