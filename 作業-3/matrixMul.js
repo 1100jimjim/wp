@@ -11,5 +11,5 @@ function matrixMul(a,b){
     return c    
 }
 
-var a=[[3,4],[1,2]], b=[[2,8],[5,7]]
-console.log("a=[[3,4],[1,2]]*b=[[2,8],[5,7]]= ",matrixMul(a,b))
+var a=[[3,6],[3,7]], b=[[2,8],[5,7]]
+console.log("a=[[3,3],[3,7]]*b=[[2,8],[5,7]]= ",matrixMul(a,b))
