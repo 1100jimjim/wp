@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自我介紹</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 50px;
+            background-color: #333;
+            overflow-x: hidden;
+            transition: width 0.3s ease;
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .sidebar:hover {
+            width: 250px;
+        }
+
+        .sidebar h2 {
+            font-size: 20px;
+            margin: 20px 0;
+            transition: opacity 0.3s ease;
+            opacity: 0;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 10px;
+            transition: color 0.3s ease, opacity 0.3s ease;
+            opacity: 0;
+        }
+
+        .sidebar a:hover {
+            color: #f1c40f;
+        }
+
+        .sidebar .icon {
+            font-size: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .sidebar:hover .icon {
+            transform: rotate(90deg);
+        }
+
+        .sidebar:hover h2,
+        .sidebar:hover a {
+            opacity: 1;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="sidebar">
+        <div class="icon">☰</div>
+        <h2>作業列表</h2>
+        <a href="https://1100jimjim.github.io/wp/%E4%BD%9C%E6%A5%AD-5/%E6%94%BE%E5%A4%A7.html">作業1</a>
+        <a href="https://1100jimjim.github.io/wp/html/%E8%A8%BB%E5%86%8A%E7%95%AB%E9%9D%A2CSS%E7%89%88.html">作業2</a>
+        <a href=":https://1100jimjim.github.io/wp/%E4%BD%9C%E6%A5%AD-5/%E6%94%BE%E5%A4%A7.html">作業3</a>
+        <a href="https://1100jimjim.github.io/wp/%E4%BD%9C%E6%A5%AD-5/%E5%8F%B3%E7%A7%BB.html">作業4</a>
+    </div>
+    <div class="content">
+        <h1>自我介紹</h1>
+        <p>大家好，我是蘇湧竣，目前就讀於金門大學資訊工程系的大一學生。</p>
+        <p>我對於程式設計和軟體開發有濃厚興趣，並且熱衷於探索新的科技趨勢和技術創新。</p>
+        <p>此外，我也重視團隊合作和溝通能力，在團隊中能夠有效地協作和解決問題。</p>
+        <p>我渴望不斷地學習和成長，並且期待將所學應用於未來的實踐中。</p>
+        <p>如果您想要與我取得聯絡，請寄信至：<a href="mailto:1110jimjim@gmail.com">1110jimjim@gmail.com</a></p>
+    </div>
+</div>
+
+</body>
+</html>
