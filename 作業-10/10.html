@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>翻译器</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
 
+        h1 {
+            color: #333;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        select, button {
+            padding: 10px;
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        #outputText {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>翻译器</h1>
+
+    <textarea id="inputText" rows="4" cols="50" placeholder="在此输入文字..."></textarea><br><br>
+
+    <label for="targetLang">选择语言:</label>
+    <select id="targetLang">
+        <option value="English">英文</option>
+        <option value="Japanese">日文</option>
+        <option value="Simplified Chinese">简体中文</option>
+        <option value="Traditional Chinese">繁体中文</option>
+    </select><br><br>
+
+    <button onclick="translateText()">翻译</button><br><br>
+
+    <div id="outputText"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
