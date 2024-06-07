@@ -12,5 +12,5 @@
 *Enter執行部分由ChatGpt生成
  
 ## 參考資料
-* [fetchGrog.html](https://github.com/ccc112b/html2denojs/blob/master/%E5%B0%88%E6%A1%88/aichat/02b-fetchGptBrowser/fetchGroq.js)
+* [fetchGrog.js](https://github.com/ccc112b/html2denojs/blob/master/%E5%B0%88%E6%A1%88/aichat/02b-fetchGptBrowser/fetchGroq.js)
 * [fetchGroq.html](https://github.com/ccc112b/html2denojs/blob/master/%E5%B0%88%E6%A1%88/aichat/02b-fetchGptBrowser/fetchGroq.html)
