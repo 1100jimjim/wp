@@ -1,9 +1,10 @@
-function gcd(a,b){
-    if(b == 0){
-        return a
-    }else {
-        return gcd(b, a%b)
-    }
-}
+function gcd(a, b) {
 
-console.log(gcd(12,18))
+    while (b !== 0) {
+        let temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
+}
+console.log(gcd(24, 38));
